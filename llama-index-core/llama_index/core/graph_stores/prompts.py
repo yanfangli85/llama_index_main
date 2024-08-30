@@ -1,6 +1,6 @@
 from llama_index.core.prompts import PromptTemplate
 
-DEFAULT_CYPHER_TEMPALTE_STR = """Task:Generate Cypher statement to query a graph database.
+DEFAULT_CYPHER_TEMPLATE_STR = """Task:Generate Cypher statement to query a graph database.
 Instructions:
 Use only the provided relationship types and properties in the schema.
 Do not use any other relationship types or properties that are not provided.
@@ -13,4 +13,4 @@ Do not include any text except the generated Cypher statement.
 The question is:
 {question}"""
 
-DEFAULT_CYPHER_TEMPALTE = PromptTemplate(DEFAULT_CYPHER_TEMPALTE_STR)
+DEFAULT_CYPHER_TEMPLATE = PromptTemplate(DEFAULT_CYPHER_TEMPLATE_STR)
